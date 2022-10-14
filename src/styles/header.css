@@ -1,0 +1,11 @@
+.headerMenu{
+    background-color: var(--grey1);
+    padding: 30px 0;
+}
+
+.headerMenu.fixo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}

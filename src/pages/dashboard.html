@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body class="background-white">
+    <main>
+        <div class="container">
+            <section id="sectionCreate">
+                <div id="figurePerfil">
+
+                </div>
+                <form>
+                    <input type="text" id="inputPostTitle" placeholder="Digitar título do post">
+                    <textarea id="textPostContent" rows="4" placeholder="Digitar descrição do post"></textarea>
+                    <button id="btnNewPost" class="btn btn-primary float-right" disabled>Postar</button>
+                </form>
+            </section>
+
+            <h1 class="title1">Posts</h1>
+
+            <div class="d-flex" id="divPostsSuggestions">
+                <section id="sectionPosts">
+    
+                </section>
+    
+                <section id="sectionSuggestions">
+                    <aside>
+                        <p class="title2">Sugestões para você seguir</p>
+    
+                        <ul>
+                            
+                        </ul>
+                    </aside>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal-wrapper hidden" id="modal-show-post">
+        <div class="modal">
+            <div class="modal-header">
+                <button class="modal-close float-right" data-control-modal="modal-show-post">X</button>
+            </div>
+            <div class="modal-body">
+                <article id="articlePost">
+                    <figure class="d-flex figurePerfil">
+                        <img src="../assets/img/usuario.jpg">
+                        <figcaption>
+                            <p class="title2">Samuel Leão</p>
+                            <p class="text2">Front end Engineer</p>
+                        </figcaption>
+                    </figure>
+
+                    <h2 class="title1">Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+                    <p class="text1">A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="../scripts/dashboard.js"></script>
+</body>
+</html>

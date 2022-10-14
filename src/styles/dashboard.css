@@ -1,0 +1,135 @@
+@import "modal.css";
+
+main {
+    margin-top: 58px;
+}
+
+@media (min-width: 769px){
+    #sectionCreate {
+        max-width: 66%;
+    }
+}
+
+.figurePerfil {
+    gap: 12px;
+}
+
+.figurePerfil img {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+    border-radius: 100%;
+    flex: 0 0 52px;
+}
+
+.figurePerfil .text3 {
+    color: var(--grey1);
+    margin-left: 10px;
+}
+
+.figurePerfil figcaption p {
+    margin: 0;
+}
+
+.figurePerfil figcaption .title2{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+#sectionCreate form {
+    margin-top: 26px;
+    margin-bottom: 75px;
+}
+
+@media (min-width: 769px){
+    #divPostsSuggestions {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 769px){
+    #divPostsSuggestions {
+        flex-direction: column-reverse;
+    }
+}
+
+#sectionPosts {
+    flex: 0 0 66%;
+}
+
+#sectionPosts #articlePost {
+    margin: 52px 0;
+}
+
+#articlePost #divBtnAcoes {
+    gap: 44px;
+}
+
+#articlePost #divBtnAcoes #pFavorite {
+    gap: 7px;
+    cursor: pointer;
+}
+
+#articlePost #divBtnAcoes #pFavorite i,
+#articlePost #divBtnAcoes #pFavorite p {
+    display: block;
+}
+
+#pFavorite .fa-heart{
+    color: var(--greyOpacity1);
+    -webkit-transition: all .3s ease,top .2s ease-out;
+    -moz-transition: all .3s ease,top .2s ease-out;
+    transition: all .3s ease,top .2s ease-out;
+}
+
+#pFavorite:hover .fa-heart,
+#pFavorite[dislike] .fa-heart{
+    color: var(--like);
+}
+
+#sectionSuggestions{
+    position: relative;
+    width: -webkit-fill-available;
+}
+
+@media (min-width: 769px){
+    #sectionSuggestions aside{
+        position: sticky;
+        top: 120px;
+        margin: -90px 0 24px 0;
+        -webkit-transition: margin-top .4s ease-in-out;
+        transition: margin-top .4s ease-in-out;
+        margin-top: -390px;
+    }
+}
+
+@media (max-width: 769px){
+
+    #sectionSuggestions ul {
+        overflow-y: auto;
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        padding-bottom: 40px;
+    }
+}
+
+#sectionSuggestions ul li {
+    gap: 18px;
+}
+
+@media (min-width: 769px){
+    #sectionSuggestions ul li {
+        margin-top: 61px;
+    }
+}
+
+@media (max-width: 769px){
+    #sectionSuggestions ul li {
+        display: block;
+    }
+
+    #sectionSuggestions ul li .btn{
+        margin-top: 22px;
+    }
+}
